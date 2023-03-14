@@ -45,16 +45,18 @@ public class Introducao {
  
     //Entrada e saída de dados
     // Instancia um objeto scanner para receber dados do usúario
-    Scanner sc = new Scaneer(System.in);
+    Scanner sc = new Scanner(System.in);
 
     System.out.println("Entre com seu nome");
     String nomeInformado = sc.nextLine();
     
     System.out.println("Entre com a sua idade");
-    String idadeInformada = sc.nextShort();
+    short idadeInformada = sc.nextShort();
 
     System.out.println(nomeInformado + "" + idadeInformada);
+    //Fecha o objeto Scanner liberado
+    // os recursos alocados
+    sc.close();
 
-
-}
+    }
 }
